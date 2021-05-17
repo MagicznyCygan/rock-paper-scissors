@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <section class="game-container">
+        <main>
+            <section class="left">
+                <div class="logo">
+                    <img src="images/rock.png" alt="rock">
+                    <img src="images/paper.png" alt="paper">
+                    <img src="images/scissors.png" alt="scissors">
+                </div>
+
+                <div class="choices-container">
+                    <img id="rock" src="images/rock.png" alt="rock">
+                    <img id="paper" src="images/paper.png" alt="paper">
+                    <img id="scissors" src="images/scissors.png" alt="scissors">
+                </div>
+
+                <div class="show-choices" id="showChoices"></div>
+
+            </section>
+            <section class="right"></section>
+        </main>
+
+        <section class="statistics-container">
+            <div id="resultContainer" class="result-container">RESULT</div>
+            <div class="statistics-box">
+                <div class="stats">Wins <span id="wins">0</span></div>
+                <img src="images/rock.png" alt="rock">
+                <div class="stats">Loses <span id="loses">0</span></div>
+                <img src="images/paper.png" alt="paper">
+                <div class="stats">Draws <span id="draws">0</span></div>
+                <img src="images/scissors.png" alt="scissors">
+                <div class="stats">Games <span id="games">0</span></div>
+            </div>
+            <div class="accuracy-box">
+                <div class="accuracy">Accuracy <span id="accuracy">0%</span></div>
+            </div>
+        </section>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
